@@ -1,0 +1,190 @@
+@import 
+url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=DotGothic16&display=swap');
+
+html, body{
+  margin: 0;
+  height: 100%;
+}
+
+#wrapper{
+  width: 60%;
+  min-width: 400px;
+  max-width: 1200px;
+  margin: 0 auto;
+  min-height: 100vh;
+
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-top: 40px ;
+  
+  position: absolute;
+  z-index: 1;
+  left: 0;
+  right: 0;
+}
+
+canvas {
+  display: block;
+}
+
+#pic{
+  width: clamp(400px, 25vw, 580px);
+  display: block;
+}
+
+#pic_ani{
+  width: clamp(400px, 25vw, 580px);
+  display: block;
+}
+
+#pic_ani:hover{
+  transform: scale(1.1);   
+  cursor: pointer;         
+}
+
+h1{
+    font-family: 'Press Start 2P', sans-serif;
+    color:#f9e4a0;
+    font-size: clamp(28px, 3vw, 56px);
+    text-shadow: 4px 4px 0 #f4a261;
+}
+
+p{
+  font-family: 'Press Start 2P', sans-serif;
+  color: #1a1a2e;
+  font-size: 15px;
+  line-height: 23px;
+}
+
+/* ----------------------- Text_Box Design  -------------------------*/
+#textbox_01{
+  border: 3px solid #f9e4a0;
+  max-width:520px;
+  width:50%;
+  box-shadow:4px 4px 0 #f4a261;
+  background-color: #98979590;
+  margin-top: 30px;
+  border-radius: 12px;
+  padding:20px;
+  width: clamp(350px, 60%, 750px);
+  margin-top: 60px;
+}
+
+#textbox_01 p{
+  font-family: 'DotGothic16',sans-serif;
+  font-size: 19px;
+  color:#f5f0e8;
+  line-height: 25px;
+}
+
+#textbox_02{
+    border:3px solid #1a1a2e;
+    background-color: #ffffff;
+    max-width:520px;
+    width:50%;
+    box-shadow:4px 4px 0 #1a1a2e;
+    border-radius: 12px;
+    padding:20px;
+    margin-bottom: 25px;
+    margin-top: 60px;
+    width: clamp(350px, 60%, 750px);
+}
+
+#textbox_02 p{
+  font-family: 'DotGothic16' ,sans-serif;
+  font-size: 19px;
+  color:#1a1a2e
+}
+
+
+#textbox_03{
+    border:3px solid #1a1a2e;
+    background-color: #f9e4a0;
+    max-width:520px;
+    width:50%;
+    box-shadow:4px 4px 0 #1a1a2e;
+    margin-top: 30px;
+    margin-bottom: 20px;
+    padding: 15px 5px 15px 5px;
+    border-radius: 12px;
+    padding:20px;
+    width: clamp(350px, 60%, 750px);
+}
+
+#textbox_03 p{
+  font-family: 'DotGothic16' ,sans-serif;
+  font-size: 17px;
+  color:#1a1a2e
+}
+
+#click, .white{
+    font-family: 'Press Start 2P';
+    font-size: 17px;
+    color: #f5f0e8;
+}
+
+
+/*----------------------Choice Button--------------------------*/
+nav{
+    margin-top: 25px;
+    margin-bottom: 20px;
+}
+
+nav a, #confirm_btn{
+    color: #1a1a2e;
+    background-color: #f9e4a0;
+    font-family: 'Press start 2P' ,sans-serif;
+    font-size: 17px;
+    text-decoration: none;
+    border: 2px solid #1a1a2e;
+    border-radius: 12px;
+    box-shadow: 2px 2px 0 #1a1a2e;
+    padding: 10px 20px 10px 20px;
+    margin-bottom: 7px;
+}
+
+nav a:hover , #confirm_btn:hover{
+    background-color: #f4a261;
+    color: #1a1a2e;
+}
+
+/* hide the continue button until all objects are clicked */
+#next_btn{
+    display: none;
+}
+
+/*---------------------(days.html) interaction button----------------*/
+
+#objects_wrap {
+    display: flex;
+    gap: 25px;
+    margin-top: 15PX;
+}
+ 
+.obj_btn {
+    font-family: 'Press Start 2P', sans-serif;
+    font-size: 10px;
+    padding: 12px 14px;
+    border: 3px solid #1a1a2e;
+    box-shadow: 3px 3px 0 #1a1a2e;
+    background: #ffffff;
+}
+
+.obj_btn:hover {
+    background: #f9e4a0;
+}
+
+.obj_btn.clicked {
+    background-color: #c7f0d8;
+}
+
+/*------------name input---------------*/
+#name_input {
+    font-family: 'Press Start 2P', monospace;
+    font-size: 10px;
+    padding: 10px 14px;
+    border: 3px solid #1a1a2e;
+    background-color: #ffffff;
+    color: #1a1a2e;
+}

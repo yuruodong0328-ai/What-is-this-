@@ -1,0 +1,4 @@
+ window.onload = function() {
+    var petName = localStorage.getItem("petName");
+    document.getElementById("pet_name").innerHTML="You said you were not afraid.<br/>Then you opened the door.<br/>" + petName + " looked at you.<br/> It did not struggle.<br/>It did not make a sound.<br/>It just walked out.<br/>Like it had already known.<br/>Like it had been waiting to find out which one you would choose.<br/>The room is quiet now.<br/>You keep thinking about the way it looked at you right before the door closed.<br/>You said you were not afraid.<br/>You are still not sure if that was true."
+ }

@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Door</title>
+
+        
+        <script src="../../JS/p5.js"></script>
+        <script src="../../JS/p5.sound.min.js"></script>
+        <script src="../../JS/sketch_04.js"></script>
+
+		<link rel="stylesheet" href="../../CSS/styles.css"/>
+
+        <style>
+            html, body{
+                background-color: #1a1a2e;
+                background-size: cover;
+            }
+        </style>
+
+        <script src="../../JS/script_06.js"></script>
+        <script src="../../JS/script_07.js"></script>
+
+	</head>
+
+	<body id="b">
+        <div id="wrapper">
+
+            <p class="white">— The next morning —</p>
+
+            <p class="white"> KNOCK.KNOCK.KNOCK.</p>
+
+            <img src="../../Images/door.png" id="pic">
+            
+
+           <div id="textbox_01">
+             <p id="pet_name"></p>
+           </div>
+
+           <p class="white"> Who should I choose to trust? </p>
+            
+           <!-- save the player's answer before moving on -->
+           <!--Using <a> as a button: href="#" prevents default navigation.
+            onclick is used to run goEnding(), which decides the next page based on player choice.-->
+            <nav>
+                <a href="#" onclick="goEnding('protect')">PROTECT IT</a>
+                <a href="#" onclick="goEnding('open')">OPEN THE DOOR</a>
+            </nav>
+
+        </div>
+    </body>
+</html>
+<!--  href = "#" : https://developer.mozilla.org/en-US/docs/Web/HTML/Reference/Elements/a
+It says in the website : Anchor elements are often abused as fake buttons by setting their href to # 
+then listening for their click events. -->

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang = "en">
+	<head>
+		<meta charset="UTF-8"/>
+		<title>Start point</title>
+
+    <script src="JS/p5.js"></script>
+    <script src="JS/p5.sound.min.js"></script>
+    <script src="JS/sketch_01.js"></script>
+
+		<link rel="stylesheet" href="css/styles.css"/>
+
+    <style>
+      html, body{
+        
+        background-color: #1a1a2e;
+        background-size: cover;
+      }
+    </style>
+
+    <script src="JS/script_01.js"></script>
+
+	</head>
+
+	<body id="b">
+    <div id="wrapper">
+
+      <h1>What is this ???</h1>
+
+      <div id="textbox_01">
+        <p>📦 PACKAGE DELIVERED <br/>
+         Left at your doorstep.<br/>
+         No sender. No label. <br/>
+         Just... a box. 
+        </p>
+      </div>
+           
+      <img src="Images/package.png" id = "pic_ani" onclick="boxClick()">
+
+      <p id="click"> CLICK THE BOX </p>
+
+      <!-- this nav contains the link to the next page
+      it is hidden at first and will be shown later with JavaScript -->
+      <nav id="next_btn">
+      <a href="html/Start/egg.html">OPEN THE BOX</a>
+      </nav>
+
+    </div>
+  </body>
+</html>
